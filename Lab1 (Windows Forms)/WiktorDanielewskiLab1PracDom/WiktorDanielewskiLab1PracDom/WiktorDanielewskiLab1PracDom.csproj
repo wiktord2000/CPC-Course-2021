@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AD4C14B-4752-4268-A874-7CB0DBFCFA3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WiktorDanielewskiLab1PracDom</RootNamespace>
+    <AssemblyName>WiktorDanielewskiLab1PracDom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMury.Designer.cs">
+      <DependentUpon>FormMury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNagrody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNagrody.Designer.cs">
+      <DependentUpon>FormNagrody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPopulacja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPopulacja.Designer.cs">
+      <DependentUpon>FormPopulacja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatystyki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatystyki.Designer.cs">
+      <DependentUpon>FormStatystyki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWiesniacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWiesniacy.Designer.cs">
+      <DependentUpon>FormWiesniacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWojsko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWojsko.Designer.cs">
+      <DependentUpon>FormWojsko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMury.resx">
+      <DependentUpon>FormMury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNagrody.resx">
+      <DependentUpon>FormNagrody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPopulacja.resx">
+      <DependentUpon>FormPopulacja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatystyki.resx">
+      <DependentUpon>FormStatystyki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWiesniacy.resx">
+      <DependentUpon>FormWiesniacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWojsko.resx">
+      <DependentUpon>FormWojsko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClosedCase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImperiumView.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenCase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PalisadeWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoneWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FortifiedWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paperStructure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
