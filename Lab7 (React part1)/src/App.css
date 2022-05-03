@@ -1,0 +1,182 @@
+
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    padding-top: 1rem;
+}
+
+.App-subsection-header {
+  padding-top: 1rem;
+  font-size: large;
+  margin: 0;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mediumFont {
+    font-size: medium;
+}
+
+input.input {
+    min-width: 300px;
+    font-size: 22px;
+    background-color: transparent;
+    color: rgb(235, 235, 235);
+    border: unset;
+    border-bottom: 2px solid white;
+    padding: 10px 10px 5px 10px;
+    margin: 1rem;
+    transition: all 0.15s ease-out;
+}
+
+input.input:hover {
+    border-color: rgb(36, 138, 255);
+    color: white;
+}
+
+input.input:active,
+input.input:focus {
+    color: white;
+    border-color: rgb(36, 138, 255);
+    outline: none;
+    background-color: #191b20;
+}
+
+.btn {
+    line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    box-shadow: 0 2px #00000004;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #000000d9;
+    background: #fff;
+    border-color: #d9d9d9;
+    transition: all 0.15s ease-out, box-shadow 0.1s ease-out;
+}
+
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.btn:active {
+    color: #fff;
+    background: #197fec;
+    border-color: #197fec;
+    box-shadow: 0 0 0 4px #047dff65;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 200px;
+    min-height: 128px;
+    padding: 15px;
+}
+
+.containerv2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 64px;
+    padding: 0px;
+}
+
+.card {
+    background-color: #434a57;
+    box-shadow: 0 5px 12px 0 #0f0f0f9f;
+    margin-bottom: 1.0rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+
+.selectedCard {
+    background-color: #eb2630c6;
+    box-shadow: 0 5px 12px 0 #0f0f0f9f;
+    margin-bottom: 1.0rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+
+/* Dostosowyanie div zawartego w komponencie używającego klasy .card */
+.card div {
+    white-space: normal;
+    word-break: break-all;
+    margin-right: 1em;
+    margin-left: 1.5em;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+input[type='checkbox'] {
+    height: 20px;
+    width: 20px;
+    color: #40a9ff;
+    float: left;
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+.right-margin {
+    margin-right: 12px;
+}
