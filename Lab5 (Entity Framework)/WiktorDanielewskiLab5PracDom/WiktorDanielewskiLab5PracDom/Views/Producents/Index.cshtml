@@ -1,0 +1,73 @@
+﻿<!--Deklaracja typu przyjmowanego modelu-->
+@model IEnumerable<WiktorDanielewskiLab5PracDom.Models.Producent>
+
+@{
+    ViewData["Title"] = "Producenci";
+}
+
+
+<h2 class="toast-header justify-content-center">
+    Producenci
+</h2>
+
+
+<!--Tabela-->
+<table class="table text-center mb-0 toast-body">
+
+
+
+    <!--Nagłówek-->
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeadOffice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+        </tr>
+    </thead>
+
+
+
+    <!--Grupuje kontent w sekcji body tabeli-->
+    <tbody>
+
+        <!--Uzupełnienie kolumn wartościami-->
+        @foreach (var row in Model)
+        {
+            <!--Utworzenie wiersza-->
+        <tr>
+            <td class="font-weight-bold">
+                @Html.DisplayFor(modelItem => row.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => row.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => row.HeadOffice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => row.PhoneNumber)
+            </td>
+        </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<!--Linia pod tabelą-->
+<hr class="m-0" />
+
+
+<!--Przycisk dodaj-->
+<div class="text-left">
+    <button type="button" class="btn btn-success mt-2 ml-4" onclick="location.href = '@Url.Action("Create", "Producents")'">Dodaj</button>
+</div>

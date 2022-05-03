@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="toast-header">Sklep z częściami samochodowymi</h1>
+</div>
+
+
+<body class="toast-body">
+
+
+    <ul>
+        <li>
+            @Html.ActionLink("Części samochodowe", "Index", "CarParts")
+        </li>
+        <li>
+            @Html.ActionLink("Opinie", "Index", "Opinions")
+        </li>
+        <li>
+            @Html.ActionLink("Zamówienia", "Index", "Orders")
+        </li>
+        <li>
+            @Html.ActionLink("Producenci", "Index", "Producents")
+        </li>
+    </ul>
+    
+
+</body>

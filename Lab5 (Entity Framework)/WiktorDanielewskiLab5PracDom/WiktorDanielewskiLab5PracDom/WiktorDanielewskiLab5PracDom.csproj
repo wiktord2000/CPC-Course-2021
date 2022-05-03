@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211214172940_init.cs" />
+    <Compile Remove="Migrations\20211214172940_init.Designer.cs" />
+    <Compile Remove="Migrations\20211214174038_init2.cs" />
+    <Compile Remove="Migrations\20211214174038_init2.Designer.cs" />
+    <Compile Remove="Migrations\20211214174554_init.cs" />
+    <Compile Remove="Migrations\20211214174554_init.Designer.cs" />
+    <Compile Remove="Migrations\20211214181357_int.cs" />
+    <Compile Remove="Migrations\20211214181357_int.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

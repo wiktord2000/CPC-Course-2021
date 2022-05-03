@@ -1,0 +1,77 @@
+﻿<!--Deklaracja typu przyjmowanego modelu-->
+@model IEnumerable<WiktorDanielewskiLab5PracDom.Models.Opinion>
+
+
+
+@{
+    ViewData["Title"] = "Opinie";
+}
+
+
+<h2 class="toast-header justify-content-center">
+    Opinie
+</h2>
+
+
+<!--Tabela-->
+<table class="table text-center mb-0 toast-body">
+
+
+
+    <!--Nagłówek-->
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarPartID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Header)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rate)
+            </th>
+        </tr>
+    </thead>
+
+
+
+    <!--Grupuje kontent w sekcji body tabeli-->
+    <tbody>
+
+        <!--Uzupełnienie kolumn wartościami-->
+        @foreach (var row in Model)
+        {
+            <!--Utworzenie wiersza-->
+            <tr>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => row.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.CarPartID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Header)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Rate)
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<!--Linia pod tabelą-->
+<hr class="m-0" />
+
+

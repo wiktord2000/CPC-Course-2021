@@ -1,0 +1,70 @@
+﻿<!--Deklaracja typu przyjmowanego modelu-->
+@model IEnumerable<WiktorDanielewskiLab5PracDom.Models.Order>
+
+
+
+@{
+    ViewData["Title"] = "Zamówienia";
+}
+
+
+<h2 class="toast-header justify-content-center">
+    Zamówienia
+</h2>
+
+
+<body class = "toast-body ">
+
+    <!--Tabela-->
+    <table class="table text-center mb-0 w-50 m-auto">
+
+        <!--Nagłówek-->
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CarPartID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Number)
+                </th>
+            </tr>
+        </thead>
+        <!--Grupuje kontent w sekcji body tabeli-->
+        <tbody>
+
+            <!--Uzupełnienie kolumn wartościami-->
+            @foreach (var row in Model)
+            {
+                <!--Utworzenie wiersza-->
+                <tr>
+                    <td class="font-weight-bold">
+                        @Html.DisplayFor(modelItem => row.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => row.CarPartID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => row.Number)
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+    <!--Linia pod tabelą-->
+    <hr class="m-0 w-50 m-auto"/>
+
+    <br />
+
+    <!--Przycisk dodaj-->
+    <div class="row">
+        <button type="button" class="btn btn-success m-auto" style ="width: 15%" onclick="location.href = '@Url.Action("Create", "Orders")'">Dodaj</button>
+    </div>
+
+</body>
+

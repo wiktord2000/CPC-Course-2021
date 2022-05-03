@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Komunikat";
+}
+
+
+<h3 class="toast-header justify-content-center">
+    Część o podanym indeksie nie istnieje!
+</h3>
+
+<body class="toast-body">
+
+    <div class="row justify-content-center">
+        <input type="button" value="Sprawdź listę części" class="btn btn-success mt-4" onclick="location.href = '@Url.Action("Index", "CarParts")'" />
+    </div>
+
+</body>

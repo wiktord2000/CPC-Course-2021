@@ -1,0 +1,89 @@
+﻿
+<!--Deklaracja typu przyjmowanego modelu-->
+@model IEnumerable<WiktorDanielewskiLab5PracDom.Models.CarPart>
+
+
+
+@{
+    ViewData["Title"] = "Części samochodowe";
+} 
+
+
+<h2 class="toast-header justify-content-center">
+    Lista części samochodowych
+</h2>
+
+
+<!--Tabela-->
+<table class="table text-center mb-0 toast-body">
+
+
+
+    <!--Nagłówek-->
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProducentID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Availability)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayName("")
+            </th>
+        </tr>
+    </thead>
+
+
+
+    <!--Grupuje kontent w sekcji body tabeli-->
+    <tbody >
+
+        <!--Uzupełnienie kolumn wartościami-->
+        @foreach (var row in Model)
+        {
+            <!--Utworzenie wiersza-->
+            <tr>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => row.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Producent.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Availability)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => row.Price)
+                </td>
+                <td>
+                    @Html.ActionLink("Usuń", "Delete", "CarParts", routeValues: new { id = row.ID }) &nbsp @Html.ActionLink("Modyfikuj", "Modify", "CarParts", routeValues: new { id = row.ID })
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<!--Linia pod tabelą-->
+<hr class="m-0"/>
+
+
+<!--Przycisk dodaj-->
+<div class="text-left">
+        <button type="button" class="btn btn-success m-2" onclick="location.href = '@Url.Action("Create", "CarParts")'">Dodaj</button>
+</div>

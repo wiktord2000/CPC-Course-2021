@@ -1,0 +1,64 @@
+﻿
+@model WiktorDanielewskiLab5PracDom.Models.CarPart
+
+@{
+    ViewData["Title"] = "Dodawanie części";
+}
+
+
+
+
+@using (Html.BeginForm("Create", "CarParts", FormMethod.Post))
+{
+
+        <h3 class="toast-header justify-content-center">Dodaj część</h3>
+
+        <body class="toast-body container ">
+            <div class="row justify-content-center ">
+
+                <div class="col-auto text-center p-1">
+                    <div>
+                        @Html.LabelFor(model => model.Name)
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Name)
+                    </div>
+                </div>
+
+                <div class="col-auto text-center p-1">
+                    <div>
+                        @Html.LabelFor(model => model.ProducentID)
+
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Producent.Name)
+                    </div>
+                </div>
+
+                <div class="col-auto text-center p-1">
+                    <div>
+                        @Html.LabelFor(model => model.Availability)
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Availability)
+                    </div>
+                </div>
+
+                <div class="col-auto text-center p-1">
+                    <div>
+                        @Html.LabelFor(model => model.Price)
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Price)
+                    </div>
+                </div>
+
+            </div>
+
+            <hr/>
+
+            <div class="row justify-content-center">
+                <input type="submit" value="Dodaj" class="btn btn-success mt-4" style="width: 15%" />
+            </div>
+        </body>
+}

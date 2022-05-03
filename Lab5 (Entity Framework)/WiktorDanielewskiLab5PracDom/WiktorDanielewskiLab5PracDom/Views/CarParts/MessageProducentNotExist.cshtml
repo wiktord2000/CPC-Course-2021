@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Komunikat";
+
+}
+
+
+<h3 class="toast-header justify-content-center">
+    Wprowadzona nazwa producenta nie istnieje!
+</h3>
+
+<body class="toast-body">
+
+    <div class="row justify-content-center">
+        <input type="button" value="Dodaj producenta" class="btn btn-success mt-4" onclick="location.href = '@Url.Action("Index", "Producents")'"/>
+    </div>
+
+</body>

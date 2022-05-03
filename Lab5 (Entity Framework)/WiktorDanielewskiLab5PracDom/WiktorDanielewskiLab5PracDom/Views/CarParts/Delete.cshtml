@@ -1,0 +1,92 @@
+﻿
+@model WiktorDanielewskiLab5PracDom.Models.CarPart
+
+@{
+    ViewData["Title"] = "Dodawanie części";
+}
+
+
+@using (Html.BeginForm("Delete", "CarParts", FormMethod.Post))
+{
+    <h3 class="modal-header">Czy na pewno chcesz usunąć poniższy rekord?</h3>
+
+    <body class="modal-body container">
+
+        <!--Wiersz dla ID częsci-->
+        <div class="row m-1">
+
+            <!--Wyświetlenie nazwy zmiennej-->
+            <div class="col-1">
+                <span class = "font-weight-bold float-right"/>@Html.DisplayNameFor(model => model.ID)
+            </div>
+
+            <!--Wyświetlenie zawartości zmiennej-->
+            <div class="col-9">
+                @Html.DisplayFor(model => model.ID)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla nazwy części-->
+        <div class="row m-1">
+
+            
+            <div class="col-1">
+                <span class = "font-weight-bold float-right"/>@Html.DisplayNameFor(model => model.Name)
+            </div>
+
+            <div class="col-9">
+                @Html.DisplayFor(model => model.Name)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla nazwy nazwy producenta-->
+        <div class="row m-1">
+
+            <div class="col-1">
+                <span class = "font-weight-bold float-right"/>@Html.DisplayNameFor(model => model.Producent.Name)
+            </div>
+            <div class="col-9">
+                @Html.DisplayFor(model => model.Producent.Name)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla dostępności-->
+        <div class="row m-1">
+
+            <div class="col-1">
+                <span class = "font-weight-bold float-right"/>@Html.DisplayNameFor(model => model.Availability)
+            </div>
+            <div class="col-9">
+                @Html.DisplayFor(model => model.Availability)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla ceny-->
+        <div class="row m-1">
+
+            <div class="col-1">
+                <span class = "font-weight-bold float-right"/>@Html.DisplayNameFor(model => model.Price) 
+            </div>
+            <div class="col-9">
+                @Html.DisplayFor(model => model.Price)
+            </div>
+
+        </div>
+
+        <hr />
+
+        <!--Przycisk-->
+        <div class="row ml-0 mt-3 mb-3">
+            <div class="col-3 ">
+                <input type="submit" value="Usuń" class="btn btn-danger w-50 " />
+            </div>
+        </div>
+
+        <br />
+
+    </body>
+}

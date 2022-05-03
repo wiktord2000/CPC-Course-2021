@@ -1,0 +1,76 @@
+﻿@model WiktorDanielewskiLab5PracDom.Models.CarPart
+
+@{
+    ViewData["Title"] = "Modyfikowanie danych";
+}
+
+
+@using (Html.BeginForm("Modify", "CarParts", FormMethod.Post))
+{
+    <h3 class="modal-header">Modyfikacja</h3>
+
+    <body class="modal-body container">
+
+        <!--Wiersz dla nazwy części-->
+        <div class="row m-3">
+
+            <!--Wyświetlenie nazwy modyfikowanej zmiennej-->
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.Name)
+            </div>
+            <!--Pole tekstowe z aktualną wartością zmiennej, którą można modyfikować-->
+            <div class="col-9 pl-5">
+                @Html.EditorFor(model => model.Name)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla nazwy nazwy producenta-->
+        <div class="row m-3">
+
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.Producent.Name)
+            </div>
+            <div class="col-9 pl-5">
+                @Html.EditorFor(model => model.Producent.Name)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla dostępności-->
+        <div class="row m-3">
+
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.Availability)
+            </div>
+            <div class="col-9 pl-5">
+                @Html.EditorFor(model => model.Availability)
+            </div>
+
+        </div>
+
+        <!--Wiersz dla ceny-->
+        <div class="row m-3">
+
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.Price)
+            </div>
+            <div class="col-9 pl-5">
+                @Html.EditorFor(model => model.Price)
+            </div>
+
+        </div>
+
+        <hr />
+
+        <!--Przycisk-->
+        <div class="row ml-0 mt-3 mb-3">
+            <div class="col-3 ">
+                <input type="submit" value="Zatwierdź" class="btn btn-danger w-50" />
+            </div>
+        </div>
+
+        <br />
+
+    </body>
+}

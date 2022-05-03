@@ -1,0 +1,56 @@
+﻿
+@model WiktorDanielewskiLab5PracDom.Models.Producent
+
+@{
+    ViewData["Title"] = "Dodawanie producenta";
+}
+
+
+
+
+@using (Html.BeginForm("Create", "Producents", FormMethod.Post))
+{
+
+    <h3 class="toast-header justify-content-center">Dodawanie producenta</h3>
+
+    <body class="toast-body container ">
+        <div class="row justify-content-center ">
+
+            <div class="col-auto text-center p-1">
+                <div>
+                    @Html.LabelFor(model => model.Name)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Name)
+                </div>
+            </div>
+
+            <div class="col-auto text-center p-1">
+                <div>
+                    @Html.LabelFor(model => model.HeadOffice)
+
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.HeadOffice)
+                </div>
+            </div>
+
+            <div class="col-auto text-center p-1">
+                <div>
+                    @Html.LabelFor(model => model.PhoneNumber)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.PhoneNumber)
+                </div>
+            </div>
+
+        </div>
+
+        <hr />
+
+        <div class="row justify-content-center">
+            <input type="submit" value="Dodaj" class="btn btn-success mt-4" style="width: 15%" />
+        </div>
+    </body>
+}
+
