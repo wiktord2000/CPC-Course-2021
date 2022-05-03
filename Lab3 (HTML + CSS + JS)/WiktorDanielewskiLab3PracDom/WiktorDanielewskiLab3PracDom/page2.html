@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-----------Dane o stronie------------>
+<head>
+    <meta charset="utf-8" />
+    <title>Koszyk</title>
+    <link href="styles/style2.css" rel="stylesheet" type="text/css" />
+
+</head>
+<!------------------------------------->
+
+
+
+<!------------------------------------------------------------Wygląd strony------------------------------------------------------------>
+<body>
+
+
+    <!-------------------Nagłówek naszej strony--------------------->
+    <header>
+        Twój koszyk:
+    </header>
+    <!-------------------------------------------------------------->
+
+
+    <!--Sekcja zawierająca tabelę z wybranymi produktami-->
+    <section>
+        <table id="productsTable"></table>
+        <button id ="clearButton" onclick="ClearShoppingCard();">Wyczyść koszyk</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------Dodanie skryptów .js--------------------->
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script>RefreshProductsTable();</script>
+
+</body>
+
+</html>

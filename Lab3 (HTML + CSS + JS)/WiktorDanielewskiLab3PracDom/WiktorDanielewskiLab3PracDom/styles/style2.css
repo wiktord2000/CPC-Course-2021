@@ -1,0 +1,52 @@
+﻿/*Style całego ciała strony (sekcja body)*/
+/*Musimy podpiąć dany plik css do danego html, aby zobaczyć zmiany w html*/
+/*<link href="styles/style2.css" rel="stylesheet" type="text/css"/>*/
+
+header {
+    /*Samo użycie atrybutu color dotyczy tekstu*/
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    /*Upewnienie się, że sekcja jest szeroka na całą stronę*/
+    width: 100%;
+    /*Jeśli ustawimy za małe utnie nam tekst*/
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: yellowgreen;
+}
+section {
+
+    align-items: center;
+    
+}
+
+#productsTable {
+
+    width: 50%;
+    background-color: lightskyblue;
+    color: black;
+    /*Wyśrodkowanie tabeli*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#productsTable th, td {
+    border: double;
+    text-align: left;
+    padding: 5px;
+}
+
+#productsTable td {
+    background-color: skyblue;
+    padding: 3px;
+}
+
+#clearButton {
+
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}

@@ -1,0 +1,34 @@
+﻿
+/*Style całego ciała strony (sekcja body)*/
+/*Musimy podpiąć dany plik css do danego html, aby zobaczyć zmiany w html*/
+/*<link href="styles/style.css" rel="stylesheet" type="text/css"/>*/
+body {
+    background-color: yellowgreen;
+    margin: 0;
+}
+
+header {
+    /*Samo użycie atrybutu color dotyczy tekstu*/
+    color: white;
+    font-size: 70px;
+    text-align: center;
+
+    /*Upewnienie się, że sekcja jest szeroka na całą stronę*/
+    width: 100%;
+    /*Jeśli ustawimy za małe utnie nam tekst*/
+    height: 100px;
+}
+
+#description {
+
+    text-align: center;
+    font-size: 50px;
+}
+
+section {
+
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 100%;
+}

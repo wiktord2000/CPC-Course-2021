@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-----------Dane o stronie------------>
+<head>
+    <meta charset="utf-8" />
+    <title>Produkty</title>
+    <link href="styles/style1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<!------------------------------------->
+
+
+
+<!------------------------------------------------------------Wygląd strony------------------------------------------------------------>
+<body>
+
+
+    <!-------------------Nagłówek naszej strony--------------------->
+    <header>
+        Wybierz produkty:
+    </header>
+    <!-------------------------------------------------------------->
+    <!--Sekcja z produktami-->
+    <section>
+    
+        <!--lista z produktami-->
+        <div id="productsList">
+            <dl>
+
+                <!-----------------Ziemniak----------------------->
+                <dt>Ziemniak</dt>
+                <dd>
+                    <div class="flex-container">
+
+                        <div>
+                            <img src="images/page1Images/ziemniakkk.png" alt="ziemniak" />
+                            <p>
+                                Cena: 3zł/1kg
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <label for="quantityOfPotato">Ilość:</label>
+                            <input type="text" id="quantityOfPotato" name="quantityOfPotato" onchange="PotatoCountPrice();">
+
+                        </div>
+
+                        <div>
+                            <label for="totalPotatosPrice">Cena:</label>
+                            <input type="text" id="totalPotatoPrice" name="totalPotatosPrice" onchange="PotatoCoundQuantity();">
+
+                        </div>
+
+                        <div>
+                            <button onclick="AddPotato();">Dodaj do koszyka</button>
+                        </div>
+
+                    </div>
+
+                </dd>
+
+                <!-----------------Marchewka---------------------->
+                <dt>Marchewka</dt>
+                <dd>
+                    <div class="flex-container">
+
+                        <div>
+                            <img src="images/page1Images/marchew.png" alt="marchewka" />
+                            <p>
+                                Cena: 4zł/1kg
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <label for="quantityOfCarrot">Ilość:</label>
+                            <input type="text" id="quantityOfCarrot" name="quantityOfCarrot" onchange="CarrotCountPrice();">
+
+                        </div>
+
+                        <div>
+                            <label for="totalCarrotPrice">Cena:</label>
+                            <input type="text" id="totalCarrotPrice" name="totalCarrotPrice" onchange="CarrotCoundQuantity();">
+
+                        </div>
+
+                        <div>
+                            <button onclick="AddCarrot();">Dodaj do koszyka</button>
+                        </div>
+
+                    </div>
+
+                </dd>
+            </dl>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------Dodanie skryptów .js--------------------->
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+
+</body>
+
+</html>
