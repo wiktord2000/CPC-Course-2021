@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Wynik";
+}
+
+<!--Definiujemy jaki typ danych zosta� nam przekazany-->
+@model WiktorDanielewskiLab4PracDom.Models.ResultViewModel
+
+<head>
+    <!--Wyświetlanie polskich znaków-->
+    <meta charset="utf-8" />
+</head>
+
+<!--Nagłówek strony-->
+<h2 class="toast-header">
+    Twój wynik
+</h2>
+
+<!--Opis-->
+<h4 class="toast-body">
+    Uzyskałeś @Model.Points na @Model.MaxPoints.
+</h4>
+
+<!--Stopka z powrotem do poprzedniej strony-->
+<div class="modal-footer float-left">
+    @Html.ActionLink("Powrót", "StudyPage", "Home")
+</div>

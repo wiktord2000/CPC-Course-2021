@@ -1,0 +1,13 @@
+﻿.grey {
+    background-color: grey;
+}
+
+input{
+    max-width: 150px;
+    margin: 0 10px;
+}
+
+.label {
+    width: 170px;
+    text-align: center;
+}

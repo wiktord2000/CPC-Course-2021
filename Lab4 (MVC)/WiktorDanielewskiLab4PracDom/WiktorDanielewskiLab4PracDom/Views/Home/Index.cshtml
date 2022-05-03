@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Państwa i ich stolice";
+}
+
+<div style="padding: 2rem 2rem 4rem 2rem;" class="jumbotron">
+
+    <!----------------------Strona główna-------------------------->
+
+    <!--Nagłówek-->
+    <div class="modal-header">
+        <h1>Witaj!</h1>
+    </div>
+
+    <!--Treść-->
+    <div class="modal-body">
+
+        <!--Opis-->
+        <p>Na naszej stronie nauczysz się nazw państ oraz ich stolic.</p>
+
+        <!--Obrazek-->
+        <img src="~/startingImage.jpg" alt="Mapa państw" height="300" width="450" />
+        <br />
+        <br />
+
+        <!--Przycisk-->
+        <div>
+            <!--Po naciśnięciu przechodzimy do widoku strony StudyPage-->
+            <input type="submit" value="Rozpocznij naukę" class="btn btn-success" onclick="location.href='@Url.Action("StudyPage", "Home")'"/>
+        </div>
+
+    </div>
+
+    <!--Stopka z odnośnikiem do nowej strony-->
+    <div class="modal-footer float-left">
+        @Html.ActionLink("Otrzymuj informację o nowych grach", "Subscription", "Home")
+    </div>
+
+</div>
+

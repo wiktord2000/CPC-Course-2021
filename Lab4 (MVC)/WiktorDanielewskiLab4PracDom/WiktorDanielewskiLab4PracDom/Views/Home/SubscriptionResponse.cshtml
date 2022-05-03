@@ -1,0 +1,23 @@
+
+@{
+    ViewData["Title"] = "Subskrypcja";
+}
+<head>
+    <!--Wyświetlanie polskich znaków-->
+    <meta charset="utf-8" />
+</head>
+
+<!--Nagłówek strony-->
+<h1 class="toast-header">
+    Subskrypcja
+</h1>
+
+<!--Opis-->
+<h4 class="toast-body">
+    Na adres <span style="color: #4cbb17">@ViewBag.email</span> została wysłana wiadomość potwierdzająca Twoją subskrypcję. Wejdź na skrzynkę pocztową i upewnij się, czy napewno do Ciebie dotarła. Dziękujemy :)
+</h4>
+
+<!--Stopka zawierająca ActionLink umożliwiający powrót do strony głównej-->
+<div class="modal-footer">
+    @Html.ActionLink("Powrót", "Index")
+</div>

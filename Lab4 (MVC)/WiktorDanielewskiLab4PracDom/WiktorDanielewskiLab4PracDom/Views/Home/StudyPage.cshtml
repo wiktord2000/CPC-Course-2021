@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "Nauka";
+}
+
+<!--Definiujemy jaki typ danych został nam przekazany-->
+
+@model WiktorDanielewskiLab4PracDom.Models.StudyViewModel 
+
+<head>
+    <!--Wyświetlanie polskich znaków-->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/studyPage.css" type="text/css" />
+</head>
+
+<!--Nagłówek strony-->
+<h2 class="toast-header justify-content-center">
+    Wypełnij puste pola
+</h2>
+
+<!--Mniejszy nagłówek-->
+<h5 class="toast-header justify-content-center">
+    Pańswo -> Stolica
+</h5>
+
+<div class="toast-body m-auto">
+
+    @{
+        @using (Html.BeginForm("StudyPage", "Home", FormMethod.Post))
+        {
+
+            //iterator po liście z odpowiedziami
+            int iterator = 0;
+
+            foreach (var country in Model.CountryList)
+            {
+                //jeśli pierwsze pole ma zostać puste
+                if (country.FirstEmpty)
+                {
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <!--tworzymy pole tekstowe do wprowadzenia nazwy państwa-->
+                        <div>
+                            <!--Wpisana do etykiety odpowiedź trafia do listy z odpowiedziami pod odpowiedni indeks-->
+                            @Html.EditorFor(model => Model.Answers[iterator])
+                        </div>
+
+                        <!--tworzymy etykietę wyświetlającą nazwę stolicy-->
+                        <div class="label">
+                            @Html.Label(country.Capital)
+                        </div>
+
+                    </div>
+                }
+                //jeśli pierwsze pole ma być wypełnione, a drugie puste
+                else
+                {
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <!--tworzymy etykietę wyświetlająca nazwę państwa-->
+                        <div class="label">
+                            @Html.Label(country.Name)
+                        </div>
+
+                        <!--tworzymy pole tekstowe do wprowadzenia stolicy państwa-->
+                        <div>
+                            <!--Wpisana do etykiety odpowiedź trafia do listy z odpowiedziami pod odpowiedni indeks-->
+                            @Html.EditorFor(model => Model.Answers[iterator])
+                        </div>
+
+                    </div>
+                }
+                <hr />
+                iterator++;
+            }
+
+            <!--Przycisk 'Sprawdź'-->
+            <div style="margin-top: 28px;" class="d-flex justify-content-center align-items-center">
+                <input type="button" value="Nowy zestaw" class="btn btn-secondary w-25" onclick="location.href='@Url.Action("ReverseAllCountryList", "Home")'" />
+                <input type="submit" value="Sprawdź" class="btn btn-success w-25" />
+            </div>
+
+        }
+
+    }
+
+</div>
