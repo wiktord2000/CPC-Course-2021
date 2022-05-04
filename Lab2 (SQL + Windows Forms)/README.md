@@ -1,7 +1,7 @@
 # Laboratory 2
-The goal of this laboratory was create simple database in MSSQL and connect it with Windows Forms App. 
+The goal of this laboratory was to create simple database in MSSQL and connect it with Windows Forms App. 
 <br>
-Note: The app don't use every entities in database. 
+Note: The app doesn't use every entities in database. 
 
 ## Database diagram
 <img src="Images/databaseDiagram.png" alt="drawing" width="800"/>
