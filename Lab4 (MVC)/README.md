@@ -21,9 +21,13 @@ Traditionally used for desktop graphical user interfaces (GUIs), this pattern be
 | :--: | :--: |
 | *Generate new set* | *Subscription* |
 
+<div align="center">
+ 
 |<img src="Images/subscription_sent.png" alt="drawing" width="500"/>|
 |:--:|
 |*Subscription message*|
+ 
+</div>
 
 ## Functionality
  - learning via filling the gaps
