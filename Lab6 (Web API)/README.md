@@ -1,5 +1,5 @@
 # Laboratory 6 - WebAPI
-The goal of this project was to create simple API which will include basic request i.e. GET, POST, PUT and DELETE.
+The goal of this project was to create simple API which will include basic requests i.e. GET, POST, PUT and DELETE.
 We can distinguish endpoints assigned to Directors it is: GET all directors or specific via id, POST new director, PUT or DELETE any director by id.
 We have also endpoints assigned to Movies they are: GET all movies, POST new movie, PUT or DELETE specific movie by id.
 
