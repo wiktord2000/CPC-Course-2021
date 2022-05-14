@@ -18,6 +18,6 @@ We have also endpoints assigned to Movies they are: GET all movies, POST new mov
 
 ## Screenshots
 
-|<img src="../swagger-view.png" alt="drawing" width="700"/>|
+|<img src="swagger-view.png" alt="drawing" width="700"/>|
 |:--:|
 |*Screen from Swagger*|
