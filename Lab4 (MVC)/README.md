@@ -5,7 +5,7 @@ Model–view–controller (MVC) is a software design pattern commonly used for d
 
 Traditionally used for desktop graphical user interfaces (GUIs), this pattern became popular for designing web applications. Popular programming languages have MVC frameworks that facilitate implementation of the pattern. 
 
-## View of app
+## View of the app
 
 |<img src="https://user-images.githubusercontent.com/63188869/182024000-ec215abe-6dec-434f-b866-1f69f79a9e30.png" alt="drawing" width="500"/>| <img src="https://user-images.githubusercontent.com/63188869/182024006-efb2c372-c6b6-43c8-8b62-b809384a9b08.png" alt="drawing" width="500"/> |
 | :--: | :--: |
