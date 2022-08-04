@@ -9,7 +9,7 @@ This project was my first contact with React library. Basing on the "TODO" app c
 
 P.S. I forgot about deleting persons... I'll do this in the near future :sweat_smile: 
 
-## Screenshots
+## Screenshots of the app
 
 |<img src="https://user-images.githubusercontent.com/63188869/182024991-e685134b-b902-44b2-b961-b557caa8215f.png" alt="drawing" width="800"/>|
 |:--:|
