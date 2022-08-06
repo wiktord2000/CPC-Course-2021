@@ -17,7 +17,7 @@ This game is about preparing your empire to the enemy attack as well you can in 
 
 |<img src="https://user-images.githubusercontent.com/63188869/182023050-16a5d661-98c7-4288-8179-b10328a1d31c.png" alt="drawing" width="500"/> | <img src="https://user-images.githubusercontent.com/63188869/182022974-759f7141-4683-45aa-ae8d-7c75c5b08056.png" alt="drawing" width="500"/> |
 | :--: | :--: |
-| *Awards - close* | *Awards - open* |
+| *Awards - Close* | *Awards - Open* |
 
 |<img src="https://user-images.githubusercontent.com/63188869/182023051-d9d085af-1f5c-4d1c-9134-6c97c8162aad.png" alt="drawing" width="500"/> | <img src="https://user-images.githubusercontent.com/63188869/182022960-75140e73-4007-4014-9adf-c6776920157f.png" alt="drawing" width="500"/> |
 | :--: | :--: |
