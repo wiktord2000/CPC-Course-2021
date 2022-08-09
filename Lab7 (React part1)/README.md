@@ -3,7 +3,7 @@ This project was my first contact with React library. Basing on the "TODO" app c
 
 ## Features
  - adding persons
- - sort people on groups (all, present, unpresent)
+ - sort people on groups (all, present, absent)
  - draw a person from any group
  - check presence of activity members
 
