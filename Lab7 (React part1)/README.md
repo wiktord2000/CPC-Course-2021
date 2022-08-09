@@ -1,5 +1,5 @@
 # Laboratory 7 - React part 1
-This project was my first contact with React library. Basing on the "TODO" app created during lecture I create the app to check presence of participants of any activity. We can sort them on the tree groups: all, present, unpresent. I think the nice feature is that we can draw the person from any group so we can easily find someone e.g. to respond :wink: 
+This project was my first contact with React library. Basing on the "TODO" app created during lecture I create the app to check presence of participants of any activity. We can sort them on the tree groups: all, present, absent. I think the nice feature is that we can draw the person from any group so we can easily find someone e.g. to respond :wink: 
 
 ## Features
  - adding persons
